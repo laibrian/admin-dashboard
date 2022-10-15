@@ -1,8 +1,47 @@
-@font-face {
-    font-family: mainFont;
-    src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.sidebar img {
+    width: 1.5rem;
 }
 
-.header img, .sidebar img {
-    width: 3%;
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template: auto 4fr / 1fr 4fr;
+}
+
+.header {
+    display: grid;
+    grid-area: 1 / 2 / 2 / -1;
+    padding: 0.5rem 2rem;
+}
+
+.searchbar-container img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.profile-container .notification-img {
+    height: 1.7rem;
+    cursor: pointer;
+}
+
+.profile-container .user-profile-small {
+    height:3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-container .username {
+    margin: 0;
+    cursor: pointer;
+}
+
+.welcome-container .user-profile-big {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
 }
