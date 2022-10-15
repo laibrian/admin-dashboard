@@ -3,7 +3,6 @@
     src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 }
 
-.menu-main img, .menu-secondary img {
+.header img, .sidebar img {
     width: 3%;
-    height: 3%; 
 }
