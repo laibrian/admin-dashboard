@@ -15,12 +15,42 @@ body {
 .header {
     display: grid;
     grid-area: 1 / 2 / 2 / -1;
-    padding: 0.5rem 2rem;
+    grid-template: auto 1fr / 2fr 1fr;
+    padding: 1rem 2rem;
+}
+
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .searchbar-container img{
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.searchbar-container .search-input {
+    background-color: #e7eff3;
+    border-radius: 50px;
+    border: none;
+    flex: 1;
+    height: 1.5rem;
+}
+
+.searchbar-container .search-input:focus {
+    outline: none;
+    border: none;
+}
+
+.profile-container {
+    grid-area: 1 / 2 / 2 / 3;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .profile-container .notification-img {
@@ -30,7 +60,7 @@ body {
 
 .profile-container .user-profile-small {
     height:3rem;
-    width: 3rem;
+    min-width: 3rem;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -40,8 +70,47 @@ body {
     cursor: pointer;
 }
 
+.welcome-container {
+    display: grid;
+    grid-template: 1fr 1fr / auto 1fr;
+    gap: 0.5rem 1rem;
+}
+
 .welcome-container .user-profile-big {
     height: 5rem;
-    width: 5rem;
+    min-width: 5rem;
     border-radius: 50%;
+    justify-self: end;
+    align-self: center;
+}
+
+.welcome-container .greeting {
+    margin: 0;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.welcome-container .main-username {
+    margin: 0;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btns-container button {
+    color: white;
+    background-color: #0093dd;
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
 }
