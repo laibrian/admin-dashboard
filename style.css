@@ -3,7 +3,7 @@
     src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 }
 
-.menu-nav img, .menu-bottom img {
+.menu-main img, .menu-secondary img {
     width: 3%;
     height: 3%; 
 }
