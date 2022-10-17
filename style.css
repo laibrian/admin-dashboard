@@ -224,3 +224,51 @@ body {
     height: 1.5rem;
     cursor: pointer;
 }
+
+.right-panels {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.right-panels > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-panels > div h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.announ-container, .trending {
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.announcement h6, .announcement p {
+    margin: 0;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trend-img {
+    min-width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.trend-text {
+    opacity: 0.6;
+}
