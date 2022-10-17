@@ -115,10 +115,6 @@ body {
 }
 
 /* Sidebar */
-.menu-icon {
-    width: 1.5rem;
-    cursor: pointer;
-}
 
 .sidebar {
     grid-area: 1 / 1 / -1 / 2;
@@ -126,6 +122,7 @@ body {
     background-color: #0093dd;
     display: grid;
     grid-template-rows: auto auto 1fr;
+    min-width: auto;
     padding: 1rem;
 }
 
@@ -133,6 +130,7 @@ body {
     display: flex;
     align-items: center;
     min-width: 5rem;
+    padding: 1px;
     gap: 0.5rem;
 }
 
@@ -152,8 +150,26 @@ body {
 }
 
 .sidebar ul li {
+    font-weight: bold;
     list-style: none;
     display: flex;
     gap: 1rem;
     align-items: center;
+    cursor: pointer;
+}
+
+.sidebar ul li img {
+    height: 2rem;
+    cursor: pointer;
+}
+
+/* Main */
+.content {
+    background: #e7eff3;
+    display: grid;
+}
+
+.action-block img {
+    height: 1.5rem;
+    cursor: pointer;
 }
